@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080f25;
+    color: white;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #00d9ff;
+}
+
+header p {
+    color: #8ba4c9;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+}
+
+.cartaz {
+    max-width: 850px;
+    margin: auto;
+    background: #101c3a;
+    border: 1px solid #244b80;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 35px #0077ff35;
+}
+
+.destaque {
+    text-align: center;
+    padding: 55px 25px;
+    background: linear-gradient(135deg, #102b65, #17204d, #431c78);
+}
+
+.tag {
+    display: inline-block;
+    background: #00c9ff;
+    color: #07142c;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.destaque h1 {
+    font-size: 52px;
+    margin: 25px 0;
+    line-height: 1.1;
+}
+
+.destaque h1 span {
+    color: #00d9ff;
+}
+
+.subtitulo {
+    color: #d4e4ff;
+    line-height: 1.7;
+}
+
+.cargo {
+    margin-top: 30px;
+    background: #08152f;
+    border: 1px solid #00c9ff;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.cargo span {
+    color: #00d9ff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cargo h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.informacoes,
+.requisitos,
+.atividades,
+.beneficios,
+.convite {
+    padding: 30px;
+    border-bottom: 1px solid #263b63;
+}
+
+section h2 {
+    color: #00d9ff;
+    margin-bottom: 22px;
+    font-size: 21px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.item {
+    background: #18294e;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #00c9ff;
+}
+
+.item h3 {
+    margin-bottom: 10px;
+    color: #00d9ff;
+}
+
+.item p {
+    line-height: 1.5;
+    color: #d7e3f7;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 9px 0;
+    color: #d7e3f7;
+}
+
+ul li::before {
+    content: "✔ ";
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.beneficios-grid div {
+    background: #18294e;
+    padding: 17px;
+    border-radius: 10px;
+    color: #e2edff;
+}
+
+.convite {
+    text-align: center;
+    background: linear-gradient(135deg, #102b65, #351b68);
+}
+
+.convite p {
+    color: #d7e3f7;
+    line-height: 1.7;
+}
+
+button {
+    margin-top: 25px;
+    padding: 16px 30px;
+    background: #00d9ff;
+    color: #08152f;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #8298bd;
+    padding: 25px 10px;
+    font-size: 12px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .destaque h1 {
+        font-size: 36px;
+    }
+
+    .cargo h2 {
+        font-size: 19px;
+    }
+
+    .grid,
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .informacoes,
+    .requisitos,
+    .atividades,
+    .beneficios,
+    .convite {
+        padding: 22px;
+    }
+}
